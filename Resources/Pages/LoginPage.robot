@@ -25,5 +25,6 @@ Login With
     Click                             ${loginButton}
 
 Check Error alert
-    ${locator}    Set Variable        css=.Toastify__toast-body div >> text=Credenciais inválidas
+    [Arguments]        ${message}
+    ${locator}    Set Variable        css=.Toastify__toast-body div >> text=${message}
     Wait For Elements State        ${locator}        visible    2

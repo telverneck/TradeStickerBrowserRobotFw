@@ -8,6 +8,7 @@ Test Teardown
 *** Variables ***
 ${login}            ${loginEmailAccess}
 ${password}         ${passwordAccess}
+${message}          ${messageError}
 
 *** Test Cases ***
 Scenario1: Check Login Page
@@ -21,7 +22,7 @@ Scenario1: Check Login Page
 Scenario1: Check invalid Login
     [Tags]        invalid    smoke    full
     Login With    invalid@email.com    invalid
-    Check Error alert
+    Check Error alert      ${message}  
 
 
 

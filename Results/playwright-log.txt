@@ -1,50 +1,50 @@
-{"level":30,"time":"2022-10-01T19:45:26.446Z","pid":81524,"hostname":"LenovoTelmo","msg":"Listening on 65011"}
-{"level":30,"time":"2022-10-01T19:45:26.656Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:26.658Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:26.662Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2022-10-01T19:45:28.057Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method newBrowser"}
-{"level":30,"time":"2022-10-01T19:45:28.062Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method newContext"}
-{"level":30,"time":"2022-10-01T19:45:28.062Z","pid":81524,"hostname":"LenovoTelmo","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-10-01T19:45:28.062Z","pid":81524,"hostname":"LenovoTelmo","msg":"Trace file: "}
-{"level":30,"time":"2022-10-01T19:45:28.107Z","pid":81524,"hostname":"LenovoTelmo","msg":"Changed active context"}
-{"level":30,"time":"2022-10-01T19:45:28.108Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method newContext"}
-{"level":30,"time":"2022-10-01T19:45:28.116Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method newPage"}
-{"level":30,"time":"2022-10-01T19:45:28.116Z","pid":81524,"hostname":"LenovoTelmo","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-10-01T19:45:28.778Z","pid":81524,"hostname":"LenovoTelmo","msg":"Video path: undefined"}
-{"level":30,"time":"2022-10-01T19:45:28.778Z","pid":81524,"hostname":"LenovoTelmo","msg":"Changed active page"}
-{"level":30,"time":"2022-10-01T19:45:29.547Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method newPage"}
-{"level":30,"time":"2022-10-01T19:45:29.634Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:29.639Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:29.646Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method getElementStates"}
-{"level":30,"time":"2022-10-01T19:45:29.647Z","pid":81524,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with button >> text=Entrar in page."}
-{"level":30,"time":"2022-10-01T19:45:29.738Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method getElementStates"}
-{"level":30,"time":"2022-10-01T19:45:29.741Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method getElementStates"}
-{"level":30,"time":"2022-10-01T19:45:29.741Z","pid":81524,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with *[name*=password] in page."}
-{"level":30,"time":"2022-10-01T19:45:29.780Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method getElementStates"}
-{"level":30,"time":"2022-10-01T19:45:29.783Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method getText"}
-{"level":30,"time":"2022-10-01T19:45:29.783Z","pid":81524,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with .logo-container h2 in page."}
-{"level":30,"time":"2022-10-01T19:45:29.798Z","pid":81524,"hostname":"LenovoTelmo","msg":"Retrieved text for element .logo-container h2 containing Conectando colecionadores de figurinhas da copa."}
-{"level":30,"time":"2022-10-01T19:45:29.798Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method getText"}
-{"level":30,"time":"2022-10-01T19:45:29.801Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method fillText"}
-{"level":30,"time":"2022-10-01T19:45:29.802Z","pid":81524,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with *[name*=email] in page."}
-{"level":30,"time":"2022-10-01T19:45:29.833Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method fillText"}
-{"level":30,"time":"2022-10-01T19:45:29.835Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method fillText"}
-{"level":30,"time":"2022-10-01T19:45:29.835Z","pid":81524,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with *[name*=password] in page."}
-{"level":30,"time":"2022-10-01T19:45:29.851Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method fillText"}
-{"level":30,"time":"2022-10-01T19:45:29.854Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method click"}
-{"level":30,"time":"2022-10-01T19:45:29.855Z","pid":81524,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with button >> text=Entrar in page."}
-{"level":30,"time":"2022-10-01T19:45:29.912Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method click"}
-{"level":30,"time":"2022-10-01T19:45:29.916Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2022-10-01T19:45:29.916Z","pid":81524,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body div >> text=Credenciais inválidas in page."}
-{"level":30,"time":"2022-10-01T19:45:29.939Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2022-10-01T19:45:29.942Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:29.944Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:29.948Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2022-10-01T19:45:30.233Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2022-10-01T19:45:30.237Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2022-10-01T19:45:30.405Z","pid":81524,"hostname":"LenovoTelmo","msg":"Removed page=be5b5783-292a-4f4c-a1a8-66ec34d8c0ac from context=ee6e87c7-9b2c-49f1-b693-b943d6b99cca page stack"}
-{"level":30,"time":"2022-10-01T19:45:34.588Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2022-10-01T19:45:34.590Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:34.591Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-10-01T19:45:34.805Z","pid":81524,"hostname":"LenovoTelmo","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2022-10-01T19:45:34.805Z","pid":81524,"hostname":"LenovoTelmo","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2022-10-01T19:51:07.067Z","pid":82068,"hostname":"LenovoTelmo","msg":"Listening on 50757"}
+{"level":30,"time":"2022-10-01T19:51:07.174Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:07.176Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:07.182Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2022-10-01T19:51:08.589Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method newBrowser"}
+{"level":30,"time":"2022-10-01T19:51:08.594Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method newContext"}
+{"level":30,"time":"2022-10-01T19:51:08.594Z","pid":82068,"hostname":"LenovoTelmo","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-10-01T19:51:08.595Z","pid":82068,"hostname":"LenovoTelmo","msg":"Trace file: "}
+{"level":30,"time":"2022-10-01T19:51:08.628Z","pid":82068,"hostname":"LenovoTelmo","msg":"Changed active context"}
+{"level":30,"time":"2022-10-01T19:51:08.628Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method newContext"}
+{"level":30,"time":"2022-10-01T19:51:08.636Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-10-01T19:51:08.636Z","pid":82068,"hostname":"LenovoTelmo","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-10-01T19:51:09.009Z","pid":82068,"hostname":"LenovoTelmo","msg":"Video path: undefined"}
+{"level":30,"time":"2022-10-01T19:51:09.010Z","pid":82068,"hostname":"LenovoTelmo","msg":"Changed active page"}
+{"level":30,"time":"2022-10-01T19:51:09.943Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method newPage"}
+{"level":30,"time":"2022-10-01T19:51:10.056Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:10.062Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:10.067Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2022-10-01T19:51:10.068Z","pid":82068,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with button >> text=Entrar in page."}
+{"level":30,"time":"2022-10-01T19:51:10.177Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method getElementStates"}
+{"level":30,"time":"2022-10-01T19:51:10.180Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2022-10-01T19:51:10.180Z","pid":82068,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with *[name*=password] in page."}
+{"level":30,"time":"2022-10-01T19:51:10.222Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method getElementStates"}
+{"level":30,"time":"2022-10-01T19:51:10.225Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method getText"}
+{"level":30,"time":"2022-10-01T19:51:10.225Z","pid":82068,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with .logo-container h2 in page."}
+{"level":30,"time":"2022-10-01T19:51:10.242Z","pid":82068,"hostname":"LenovoTelmo","msg":"Retrieved text for element .logo-container h2 containing Conectando colecionadores de figurinhas da copa."}
+{"level":30,"time":"2022-10-01T19:51:10.243Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method getText"}
+{"level":30,"time":"2022-10-01T19:51:10.246Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-10-01T19:51:10.247Z","pid":82068,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with *[name*=email] in page."}
+{"level":30,"time":"2022-10-01T19:51:10.278Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method fillText"}
+{"level":30,"time":"2022-10-01T19:51:10.281Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-10-01T19:51:10.281Z","pid":82068,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with *[name*=password] in page."}
+{"level":30,"time":"2022-10-01T19:51:10.297Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method fillText"}
+{"level":30,"time":"2022-10-01T19:51:10.300Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method click"}
+{"level":30,"time":"2022-10-01T19:51:10.300Z","pid":82068,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with button >> text=Entrar in page."}
+{"level":30,"time":"2022-10-01T19:51:10.381Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method click"}
+{"level":30,"time":"2022-10-01T19:51:10.385Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-10-01T19:51:10.385Z","pid":82068,"hostname":"LenovoTelmo","msg":"Strict mode is enabled, find Locator with css=.Toastify__toast-body div >> text=Credenciais inválidas in page."}
+{"level":30,"time":"2022-10-01T19:51:10.395Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-10-01T19:51:10.397Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:10.399Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:10.404Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-10-01T19:51:10.670Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2022-10-01T19:51:10.674Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2022-10-01T19:51:10.678Z","pid":82068,"hostname":"LenovoTelmo","msg":"Removed page=f24d1881-b47c-46ea-b1b4-bb8911fb740b from context=72ff3e20-a2c5-4f63-820e-abe257ad8df2 page stack"}
+{"level":30,"time":"2022-10-01T19:51:13.889Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2022-10-01T19:51:13.892Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:13.892Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-10-01T19:51:13.937Z","pid":82068,"hostname":"LenovoTelmo","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2022-10-01T19:51:13.937Z","pid":82068,"hostname":"LenovoTelmo","msg":"End of node method closeAllBrowsers"}
