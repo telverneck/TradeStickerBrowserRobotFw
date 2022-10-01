@@ -8,7 +8,7 @@ Test Teardown
 *** Variables ***
 ${login}            ${loginEmailAccess}
 ${password}         ${passwordAccess}
-${message}          ${messageError}
+${message}          ${errorLoginMessage}
 
 *** Test Cases ***
 Scenario1: Check Login Page
