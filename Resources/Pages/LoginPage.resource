@@ -1,6 +1,5 @@
 ***Settings***
-Documentation        This page contains all actions that can 
-...                  be used in any project
+Documentation        This page contains all actions and functions from Login Page
 Library         Browser
 
 

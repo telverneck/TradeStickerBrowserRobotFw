@@ -1,5 +1,5 @@
 *** Settings ***
-Resource                    ../Resources/BasePage.robot
+Resource                    ../Resources/BasePage.resource
 Suite Setup                 Start Session and Login
 Suite Teardown              Close Session
 Test Setup

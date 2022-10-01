@@ -1,6 +1,5 @@
 ***Settings***
-Documentation        This page contains all actions that can 
-...                  be used in any project
+Documentation        This page contains all actions and functions from Dashboard Page
 
 Library         Browser
 
@@ -35,6 +34,6 @@ Check No Results
 
 
 Click Search Button
-    Click Element     ${searchButton}
+    Click     ${searchButton}
 
 

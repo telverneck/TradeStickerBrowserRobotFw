@@ -1,15 +1,15 @@
 ***Settings***
 Documentation           This is the main page for the project
+...                    contains all project configurations
 Library                 Browser
 Library                 FakerLibrary
 Library                 DateTime 
 Library                 String
 Library                 webdriverManager.py
 
-Resource                Pages/Common/ActionsPage.robot
-Resource                Pages/Common/ComponentsPage.robot
-Resource                Pages/LoginPage.robot
-Resource                Pages/DashboardPage.robot
+Resource                Pages/Common/ActionsPage.resource
+Resource                Pages/LoginPage.resource
+Resource                Pages/DashboardPage.resource
 
 
 Variables                properties.py
@@ -42,6 +42,12 @@ Start Session
     Set Browser Timeout    ${TIMEOUT}
     New Page                ${BASE_URL}     
     Browser.Get Title      contains    Trade Sticker
+    
+
+Start Session and Login
+    Start Session
+    Login With    ${login}    ${password}
+    Check DashBoardPage Page
     
 Close Session
     Take Screenshot
