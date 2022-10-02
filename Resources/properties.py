@@ -1,4 +1,6 @@
 browserName =       "chromium" #chromium    firefox    webkit
+headlessOption = "true"
+tradeTitle = "Trade Sticker"
 loginEmailAccess = "papito@gmail.com"
 passwordAccess = "vaibrasil"
 errorLoginMessage = "Credenciais inválidas"
