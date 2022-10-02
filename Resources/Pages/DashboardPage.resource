@@ -2,6 +2,7 @@
 Documentation        This page contains all actions and functions from Dashboard Page
 
 Library         Browser
+Resource                Pages/Common/ActionsPage.resource  #leave this for now to remove errors
 
 *** Variables ***
 ${backButton}                img[src*='back']
@@ -13,9 +14,9 @@ ${contactButton}             button >> text=Entrar em contato
 
 *** Keywords ***
 Check DashBoardPage Page
-    ${visibility}    Get Element States        ${backButton}    validate    enabled | visible
-    ${visibility}    Get Element States        ${searchBarInput}    validate    enabled | visible
-    ${visibility}    Get Element States        ${searchButton}    validate    enabled | visible
+    Is Element Visible    ${backButton}  
+    Is Element Visible    ${searchBarInput}    
+    Is Element Visible    ${searchButton}   
 Click Back Button
     Click    ${backButton}
     
@@ -25,11 +26,11 @@ Search for ticket
     Click Search Button
 
 Check Results
-    ${visibility}    Get Element States        ${searchResultsTable}    validate    enabled | visible
+    Is Element Visible    ${searchResultsTable}
     
 
 Check No Results
-    ${visibility}    Get Element States        ${erroAlert}    validate    enabled | visible
+    Is Element Visible    ${erroAlert}
 
 Click Search Button
     Click     ${searchButton}

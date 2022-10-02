@@ -5,7 +5,6 @@ Library                 Browser
 Library                 FakerLibrary
 Library                 DateTime 
 Library                 String
-Library                 webdriverManager.py
 
 Resource                Pages/Common/ActionsPage.resource
 Resource                Pages/LoginPage.resource
@@ -24,7 +23,7 @@ ${LONGTIMEOUT}                      90
 ${TIMEOUT}                          60
 ${BROWSER_WIDTH}                    1440   
 ${BROWSER_HEIGHT}                   900
-${slogan}                           Conectando colecionadores de figurinhas da copa.
+
 
 
 ${login}            ${loginEmailAccess}
@@ -38,6 +37,7 @@ Start Session
     Set Browser Timeout    ${TIMEOUT}
     New Page                ${BASE_URL}     
     Browser.Get Title      contains    Trade Sticker
+    Check Login Page
     
 Login
     Login With    ${login}    ${password}
