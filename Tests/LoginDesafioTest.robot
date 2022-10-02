@@ -10,12 +10,14 @@ ${login}                    ${loginEmailAccess}
 ${password}                 ${passwordAccess}
 ${message}                  ${errorLoginMessage}
 ${messageEmptyLogin}        ${errorEmailMessage}
-${messageEmptyPassword}     ${errorPasswordMessage}
+${messageEmptyPassword}     ${errorPasswordMessage} 
+${messageErrorCredentials}     ${errorCredentialsMessage} 
 
 *** Test Cases ***                    Login                    Password        Message
 Check invalid Login                   invalid@email.com        invalid         ${message}  
 Check Empty Login                     ${EMPTY}                 invalid         ${messageEmptyLogin}  
 Check Empty Password                  invalid@email.com        ${EMPTY}        ${messageEmptyPassword}  
+Check Empty Login and Password        ${EMPTY}                 ${EMPTY}        ${messageErrorCredentials}  
 
 
 
