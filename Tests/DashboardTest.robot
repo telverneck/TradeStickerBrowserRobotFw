@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation                Testes da pagina Dashboard
 Resource                    ../Resources/BasePage.resource
-Suite Setup                 Start Session and Login
+Suite Setup                 Start Session
 Suite Teardown              Close Session
-Test Setup
-Test Teardown
+Test Setup                  Login
+Test Teardown               Logout
 
 *** Variables ***
 ${sticker}    Neymar Jr

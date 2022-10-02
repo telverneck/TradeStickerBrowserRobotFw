@@ -33,12 +33,15 @@ ${password}         ${passwordAccess}
 
 ***Keywords***
 Start Session    
-    New Browser    headless=true
+    New Browser    headless=false
     New Context    viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}
     Set Browser Timeout    ${TIMEOUT}
     New Page                ${BASE_URL}     
     Browser.Get Title      contains    Trade Sticker
     
+Login
+    Login With    ${login}    ${password}
+    Check DashBoardPage Page
 
 Start Session and Login
     Start Session

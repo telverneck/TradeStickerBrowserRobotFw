@@ -47,4 +47,8 @@ Whatsapp validation
     Switch Page    NEW
     Wait For Elements State    p >> text=${sticket}    visible    5000
     Take Screenshot
+    Close Page    CURRENT     CURRENT     CURRENT 
+    Switch Page    CURRENT
 
+Logout
+    Click Back Button

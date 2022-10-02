@@ -3,8 +3,6 @@ Documentation                Teste de login
 Resource                    ../Resources/BasePage.resource
 Suite Setup                 Start Session
 Suite Teardown              Close Session
-Test Setup
-Test Teardown
 
 *** Variables ***
 ${login}            ${loginEmailAccess}
