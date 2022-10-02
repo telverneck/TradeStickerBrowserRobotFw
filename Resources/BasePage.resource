@@ -19,7 +19,7 @@ Variables                properties.py
 ***Variables***
 ${BASEURL}                          https://trade-sticker-dev.vercel.app/
 ${BROWSER}                          ${browserName}  # properties.py file
-@{LIST_OF_BROSERS}                  chrome    firefox    edge
+@{LIST_OF_BROWSERS}                  chromium    firefox    webkit
 ${LONGTIMEOUT}                      90
 ${TIMEOUT}                          60
 ${BROWSER_WIDTH}                    1440   
@@ -33,7 +33,7 @@ ${password}         ${passwordAccess}
 
 ***Keywords***
 Start Session    
-    New Browser    headless=false
+    New Browser    headless=true    browser=${BROWSER}
     New Context    viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}
     Set Browser Timeout    ${TIMEOUT}
     New Page                ${BASE_URL}     

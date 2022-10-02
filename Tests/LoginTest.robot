@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation                Teste de login
 Resource                    ../Resources/BasePage.resource
-Suite Setup                 Start Session
-Suite Teardown              Close Session
+Test Setup                 Start Session
+Test Teardown              Close Session
 
 *** Variables ***
 ${login}            ${loginEmailAccess}

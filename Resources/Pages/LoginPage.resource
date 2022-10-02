@@ -27,4 +27,5 @@ Check Error alert
     [Arguments]        ${message}
     ${locator}    Set Variable        css=.Toastify__toast-body div >> text=${message}
     Wait For Elements State        ${locator}        visible    2
+    Take Screenshot
 
