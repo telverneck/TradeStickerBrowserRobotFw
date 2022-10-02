@@ -24,19 +24,20 @@ ${TIMEOUT}                          60
 ${BROWSER_WIDTH}                    1440   
 ${BROWSER_HEIGHT}                   900
 
-
-
+# properties.py file variables
+${HEADLESS}                        ${headlessOption}
 ${login}            ${loginEmailAccess}
 ${password}         ${passwordAccess}
+${pageTitle}        ${tradeTitle}
 
 
 ***Keywords***
 Start Session    
-    New Browser    headless=true    browser=${BROWSER}
+    New Browser    headless=${HEADLESS}    browser=${BROWSER}
     New Context    viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}
     Set Browser Timeout    ${TIMEOUT}
     New Page                ${BASE_URL}     
-    Browser.Get Title      contains    Trade Sticker
+    Browser.Get Title      contains    ${pageTitle}
     Check Login Page
     
 Login

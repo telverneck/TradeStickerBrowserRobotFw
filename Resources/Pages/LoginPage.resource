@@ -11,14 +11,14 @@ ${passwordInput}         *[name*=password]
 ${loginButton}           button >> text=Entrar
 ${logoText}            .logo-container h2 
 ${alert}                .Toastify__toast-body div
-${slogan}               ${sloganText}
+${slogan}               ${sloganText}     # properties.py file
 
 *** Keywords ***
 Check Login Page
     Is Element Visible        ${loginButton}
-    Is Element Visible    ${loginButton}  
-    Is Element Visible    ${passwordInput}
-    Browser.Get Text     ${logoText}      contains    ${slogan}   
+    Is Element Visible        ${loginButton}  
+    Is Element Visible        ${passwordInput}
+    Browser.Get Text          ${logoText}      contains    ${slogan}   
 
 
 Login With
