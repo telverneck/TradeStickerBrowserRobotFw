@@ -1,13 +1,13 @@
 *** Settings ***
-Resource                    ../Resources/BasePage.robot
-Suite Setup                 Start Session
-Suite Teardown              Close Session
-Test Setup
-Test Teardown
+Documentation                Teste de login
+Resource                    ../Resources/BasePage.resource
+Test Setup                 Start Session
+Test Teardown              Close Session
 
 *** Variables ***
 ${login}            ${loginEmailAccess}
 ${password}         ${passwordAccess}
+${message}          ${errorLoginMessage}
 
 *** Test Cases ***
 Scenario1: Check Login Page
@@ -21,7 +21,7 @@ Scenario1: Check Login Page
 Scenario1: Check invalid Login
     [Tags]        invalid    smoke    full
     Login With    invalid@email.com    invalid
-    Check Error alert
+    Check Error alert      ${message}  
 
 
 
