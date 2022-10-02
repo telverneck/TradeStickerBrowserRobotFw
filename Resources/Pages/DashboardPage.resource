@@ -8,7 +8,7 @@ ${backButton}                img[src*='back']
 ${searchBarInput}            id=keyword
 ${searchButton}              xpath=//button[contains(text(),'Buscar')]
 ${searchResultsTable}        article
-${erroAlert}                 class=error
+${erroAlert}                 css=.error
 
 *** Keywords ***
 Check DashBoardPage Page
