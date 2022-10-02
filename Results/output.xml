@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.11 on win32)" generated="20221001 23:32:18.985" rpa="false" schemaversion="3">
-<suite id="s1" name="Tests" source="C:\RobotFramework\TradeStickerBrowser\Tests">
-<suite id="s1-s1" name="DashboardTest" source="C:\RobotFramework\TradeStickerBrowser\Tests\DashboardTest.robot">
+<robot generator="Robot 5.0.1 (Python 3.9.11 on win32)" generated="20221001 23:56:16.863" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginDesafioTest" source="C:\RobotFramework\TradeStickerBrowser\Tests\LoginDesafioTest.robot">
+<test id="s1-t1" name="Check invalid Login" line="17">
 <kw name="Start Session" library="BasePage" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>headless=true</arg>
@@ -9,35 +9,35 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20221001 23:32:21.877" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\92644f8e-343b-4327-8df5-6a2df38be88e"}</msg>
-<msg timestamp="20221001 23:32:24.101" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\92644f8e-343b-4327-8df5-6a2df38be88e"}</msg>
-<status status="PASS" starttime="20221001 23:32:21.877" endtime="20221001 23:32:24.101"/>
+<msg timestamp="20221001 23:56:21.979" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\def93afd-b8f9-4a2b-84cc-a5dc167475f6"}</msg>
+<msg timestamp="20221001 23:56:24.248" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\def93afd-b8f9-4a2b-84cc-a5dc167475f6"}</msg>
+<status status="PASS" starttime="20221001 23:56:21.979" endtime="20221001 23:56:24.249"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20221001 23:32:24.102" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
-<msg timestamp="20221001 23:32:24.137" level="INFO">Successfully created context. </msg>
-<msg timestamp="20221001 23:32:24.137" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
-<status status="PASS" starttime="20221001 23:32:24.101" endtime="20221001 23:32:24.137"/>
+<msg timestamp="20221001 23:56:24.250" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221001 23:56:24.292" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221001 23:56:24.292" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<status status="PASS" starttime="20221001 23:56:24.249" endtime="20221001 23:56:24.292"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${TIMEOUT}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20221001 23:32:24.141" level="INFO">Set timeout to: 60000</msg>
-<status status="PASS" starttime="20221001 23:32:24.137" endtime="20221001 23:32:24.142"/>
+<msg timestamp="20221001 23:56:24.298" level="INFO">Set timeout to: 60000</msg>
+<status status="PASS" starttime="20221001 23:56:24.292" endtime="20221001 23:56:24.298"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20221001 23:32:25.635" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
-<status status="PASS" starttime="20221001 23:32:24.142" endtime="20221001 23:32:25.636"/>
+<msg timestamp="20221001 23:56:30.222" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
+<status status="PASS" starttime="20221001 23:56:24.298" endtime="20221001 23:56:30.222"/>
 </kw>
 <kw name="Get Title" library="Browser">
 <arg>contains</arg>
@@ -46,7 +46,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20221001 23:32:25.636" endtime="20221001 23:32:25.735"/>
+<status status="PASS" starttime="20221001 23:56:30.222" endtime="20221001 23:56:30.231"/>
 </kw>
 <kw name="Check Login Page" library="LoginPage">
 <kw name="Is Element Visible" library="ActionsPage">
@@ -60,11 +60,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:25.846" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:25.846" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:25.737" endtime="20221001 23:32:25.846"/>
+<msg timestamp="20221001 23:56:30.336" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:30.336" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:30.232" endtime="20221001 23:56:30.336"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:25.736" endtime="20221001 23:32:25.846"/>
+<status status="PASS" starttime="20221001 23:56:30.232" endtime="20221001 23:56:30.336"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -77,11 +77,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:25.891" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:25.891" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:25.846" endtime="20221001 23:32:25.892"/>
+<msg timestamp="20221001 23:56:30.378" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:30.378" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:30.336" endtime="20221001 23:56:30.378"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:25.846" endtime="20221001 23:32:25.892"/>
+<status status="PASS" starttime="20221001 23:56:30.336" endtime="20221001 23:56:30.378"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -94,11 +94,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:25.937" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:25.937" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:25.893" endtime="20221001 23:32:25.937"/>
+<msg timestamp="20221001 23:56:30.417" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:30.417" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:30.378" endtime="20221001 23:56:30.417"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:25.892" endtime="20221001 23:32:25.937"/>
+<status status="PASS" starttime="20221001 23:56:30.378" endtime="20221001 23:56:30.417"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -108,652 +108,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:25.937" endtime="20221001 23:32:25.955"/>
+<status status="PASS" starttime="20221001 23:56:30.418" endtime="20221001 23:56:30.436"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:25.736" endtime="20221001 23:32:25.955"/>
+<status status="PASS" starttime="20221001 23:56:30.231" endtime="20221001 23:56:30.436"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:21.876" endtime="20221001 23:32:25.955"/>
-</kw>
-<test id="s1-s1-t1" name="Scenario1: Check Search function" line="13">
-<kw name="Login" library="BasePage" type="SETUP">
-<kw name="Login With" library="LoginPage">
-<arg>${login}</arg>
-<arg>${password}</arg>
-<kw name="Check Login Page" library="LoginPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.003" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:26.004" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:25.961" endtime="20221001 23:32:26.004"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:25.961" endtime="20221001 23:32:26.004"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.046" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:26.046" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:26.005" endtime="20221001 23:32:26.046"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.004" endtime="20221001 23:32:26.046"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${passwordInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.124" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:26.125" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:26.047" endtime="20221001 23:32:26.125"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.046" endtime="20221001 23:32:26.125"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>${logoText}</arg>
-<arg>contains</arg>
-<arg>${slogan}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:26.125" endtime="20221001 23:32:26.146"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:25.961" endtime="20221001 23:32:26.146"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>${loginInput}</arg>
-<arg>${login}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.147" level="INFO">Fills the text 'papito@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:26.147" endtime="20221001 23:32:26.181"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>${passwordInput}</arg>
-<arg>${password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.181" level="INFO">Fills the text 'vaibrasil' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:26.181" endtime="20221001 23:32:26.199"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>${loginButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:26.199" endtime="20221001 23:32:26.275"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:25.960" endtime="20221001 23:32:26.275"/>
-</kw>
-<kw name="Check DashBoardPage Page" library="DashboardPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${backButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.317" level="INFO">States are: ['attached', 'hidden', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:26.317" level="INFO">${visibility} = ['attached', 'hidden', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:26.276" endtime="20221001 23:32:26.317"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.275" endtime="20221001 23:32:26.317"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${searchBarInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.354" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:26.355" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:26.317" endtime="20221001 23:32:26.355"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.317" endtime="20221001 23:32:26.355"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${searchButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.398" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:26.398" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:26.355" endtime="20221001 23:32:26.398"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.355" endtime="20221001 23:32:26.398"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.275" endtime="20221001 23:32:26.398"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:25.960" endtime="20221001 23:32:26.398"/>
-</kw>
-<kw name="Search for ticket" library="DashboardPage">
-<arg>legend</arg>
-<kw name="Fill Text" library="Browser">
-<arg>${searchBarInput}</arg>
-<arg>${ticket}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.400" level="INFO">Fills the text 'legend' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:26.399" endtime="20221001 23:32:26.417"/>
-</kw>
-<kw name="Click Search Button" library="DashboardPage">
-<kw name="Click" library="Browser">
-<arg>${searchButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:26.418" endtime="20221001 23:32:26.478"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.417" endtime="20221001 23:32:26.478"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.399" endtime="20221001 23:32:26.479"/>
-</kw>
-<kw name="Check Results" library="DashboardPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${searchResultsTable}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:26.744" level="INFO">States are: ['detached']</msg>
-<msg timestamp="20221001 23:32:26.744" level="INFO">${visibility} = ['detached']</msg>
-<status status="PASS" starttime="20221001 23:32:26.480" endtime="20221001 23:32:26.744"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.479" endtime="20221001 23:32:26.745"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.479" endtime="20221001 23:32:26.745"/>
-</kw>
-<kw name="Select Sticket" library="DashboardPage">
-<arg>${sticker}</arg>
-<kw name="Click" library="Browser">
-<arg>xpath=//img[contains(@alt,"${nome}")]/..</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:26.746" endtime="20221001 23:32:27.071"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:26.745" endtime="20221001 23:32:27.071"/>
-</kw>
-<kw name="Click Entrar em contato" library="DashboardPage">
-<kw name="Click" library="Browser">
-<arg>${contactButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:27.072" endtime="20221001 23:32:27.130"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:27.072" endtime="20221001 23:32:27.130"/>
-</kw>
-<kw name="Whatsapp validation" library="DashboardPage">
-<arg>${sticker}</arg>
-<kw name="Set Variable" library="BuiltIn">
-<var>${message}</var>
-<arg>Oi, achei o seu contato no Trade Sticker. Estou intressado(a) na figurinha do ${sticket}, bora negociar?</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20221001 23:32:27.131" level="INFO">${message} = Oi, achei o seu contato no Trade Sticker. Estou intressado(a) na figurinha do Neymar Jr, bora negociar?</msg>
-<status status="PASS" starttime="20221001 23:32:27.131" endtime="20221001 23:32:27.131"/>
-</kw>
-<kw name="Switch Page" library="Browser">
-<arg>NEW</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<msg timestamp="20221001 23:32:33.619" level="INFO">Activated new page page=0e5b19fc-cd32-4257-bd63-96eacaa54cda</msg>
-<status status="PASS" starttime="20221001 23:32:27.132" endtime="20221001 23:32:33.619"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>p &gt;&gt; text=${sticket}</arg>
-<arg>visible</arg>
-<arg>5000</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20221001 23:32:34.164" level="INFO">Waited for Element with selector p &gt;&gt; text=Neymar Jr at state visible</msg>
-<status status="PASS" starttime="20221001 23:32:33.620" endtime="20221001 23:32:34.165"/>
-</kw>
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:34.304" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:34.165" endtime="20221001 23:32:34.305"/>
-</kw>
-<kw name="Close Page" library="Browser">
-<arg>CURRENT</arg>
-<arg>CURRENT</arg>
-<arg>CURRENT</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<msg timestamp="20221001 23:32:34.312" level="INFO">[{"type": "chromium", "id": "browser=df23a0ce-410e-4f3f-a8ad-95558ca6b6c3", "contexts": [{"type": "context", "id": "context=af380435-9e99-4c8e-a78a-ea65c3a18143", "activePage": "page=0e5b19fc-cd32-4257-bd63-96eacaa54cda", "pages": [{"type": "page", "title": "Trade Sticker by Papito", "url": "https://trade-sticker-dev.vercel.app/dashboard", "id": "page=794faf44-3f9f-4ad3-aaf8-1020d9813598", "timestamp": 1664681544.631}, {"type": "page", "title": "Compartilhe no WhatsApp", "url": "https://api.whatsapp.com/send/?phone=5511999999999&amp;text=Oi%2C+achei+o+seu+contato+no+Trade+Sticker.+Estou+interessado%28a%29+na+figurinha+do+Neymar+Jr%2C+bora+negociar%3F&amp;type=phone_number&amp;app_absent=0", "id": "page=0e5b19fc-cd32-4257-bd63-96eacaa54cda", "timestamp": 1664681553.599}]}], "activeContext": "context=af380435-9e99-4c8e-a78a-ea65c3a18143", "activeBrowser": true}]</msg>
-<msg timestamp="20221001 23:32:34.314" level="INFO">Active context id</msg>
-<msg timestamp="20221001 23:32:34.317" level="INFO">Successfully changed active browser</msg>
-<msg timestamp="20221001 23:32:34.319" level="INFO">Returned active context id</msg>
-<msg timestamp="20221001 23:32:34.325" level="INFO">Successfully changed active context</msg>
-<msg timestamp="20221001 23:32:34.333" level="INFO">Successfully closed Page</msg>
-<status status="PASS" starttime="20221001 23:32:34.305" endtime="20221001 23:32:34.333"/>
-</kw>
-<kw name="Switch Page" library="Browser">
-<arg>CURRENT</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<msg timestamp="20221001 23:32:34.336" level="INFO">Returned active page id</msg>
-<status status="PASS" starttime="20221001 23:32:34.334" endtime="20221001 23:32:34.336"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:27.130" endtime="20221001 23:32:34.336"/>
-</kw>
-<kw name="Logout" library="DashboardPage" type="TEARDOWN">
-<kw name="Click Back Button" library="DashboardPage">
-<kw name="Click" library="Browser">
-<arg>${backButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:34.338" endtime="20221001 23:32:34.376"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.338" endtime="20221001 23:32:34.376"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.337" endtime="20221001 23:32:34.376"/>
-</kw>
-<doc>Test for Dashboard Page</doc>
-<tag>Dashboard</tag>
-<tag>doing</tag>
-<tag>full</tag>
-<tag>smoke</tag>
-<status status="PASS" starttime="20221001 23:32:25.956" endtime="20221001 23:32:34.377"/>
-</test>
-<test id="s1-s1-t2" name="Scenario1: Check no results" line="23">
-<kw name="Login" library="BasePage" type="SETUP">
-<kw name="Login With" library="LoginPage">
-<arg>${login}</arg>
-<arg>${password}</arg>
-<kw name="Check Login Page" library="LoginPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.432" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:34.433" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:34.389" endtime="20221001 23:32:34.433"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.388" endtime="20221001 23:32:34.433"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.476" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:34.476" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:34.433" endtime="20221001 23:32:34.476"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.433" endtime="20221001 23:32:34.476"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${passwordInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.517" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:34.517" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:34.477" endtime="20221001 23:32:34.517"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.477" endtime="20221001 23:32:34.517"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>${logoText}</arg>
-<arg>contains</arg>
-<arg>${slogan}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:34.517" endtime="20221001 23:32:34.532"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.388" endtime="20221001 23:32:34.532"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>${loginInput}</arg>
-<arg>${login}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.533" level="INFO">Fills the text 'papito@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:34.532" endtime="20221001 23:32:34.547"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>${passwordInput}</arg>
-<arg>${password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.547" level="INFO">Fills the text 'vaibrasil' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:34.547" endtime="20221001 23:32:34.560"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>${loginButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:34.560" endtime="20221001 23:32:34.608"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.388" endtime="20221001 23:32:34.608"/>
-</kw>
-<kw name="Check DashBoardPage Page" library="DashboardPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${backButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.645" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:34.645" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:34.609" endtime="20221001 23:32:34.645"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.609" endtime="20221001 23:32:34.645"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${searchBarInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.682" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:34.683" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:34.645" endtime="20221001 23:32:34.683"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.645" endtime="20221001 23:32:34.683"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${searchButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.714" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:34.714" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:34.683" endtime="20221001 23:32:34.714"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.683" endtime="20221001 23:32:34.714"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.608" endtime="20221001 23:32:34.714"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.388" endtime="20221001 23:32:34.714"/>
-</kw>
-<kw name="Search for ticket" library="DashboardPage">
-<arg>noResults</arg>
-<kw name="Fill Text" library="Browser">
-<arg>${searchBarInput}</arg>
-<arg>${ticket}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:34.714" level="INFO">Fills the text 'noResults' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:34.714" endtime="20221001 23:32:34.733"/>
-</kw>
-<kw name="Click Search Button" library="DashboardPage">
-<kw name="Click" library="Browser">
-<arg>${searchButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:34.734" endtime="20221001 23:32:34.774"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.734" endtime="20221001 23:32:34.774"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.714" endtime="20221001 23:32:34.774"/>
-</kw>
-<kw name="Check No Results" library="DashboardPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${erroAlert}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:35.044" level="INFO">States are: ['detached']</msg>
-<msg timestamp="20221001 23:32:35.044" level="INFO">${visibility} = ['detached']</msg>
-<status status="PASS" starttime="20221001 23:32:34.775" endtime="20221001 23:32:35.044"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.775" endtime="20221001 23:32:35.044"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:34.775" endtime="20221001 23:32:35.044"/>
-</kw>
-<kw name="Logout" library="DashboardPage" type="TEARDOWN">
-<kw name="Click Back Button" library="DashboardPage">
-<kw name="Click" library="Browser">
-<arg>${backButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:35.046" endtime="20221001 23:32:35.090"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:35.046" endtime="20221001 23:32:35.090"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:35.046" endtime="20221001 23:32:35.090"/>
-</kw>
-<doc>Test for Dashboard Page</doc>
-<tag>Dashboard</tag>
-<tag>full</tag>
-<tag>smoke</tag>
-<status status="PASS" starttime="20221001 23:32:34.383" endtime="20221001 23:32:35.090"/>
-</test>
-<kw name="Close Session" library="BasePage" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:35.663" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:35.099" endtime="20221001 23:32:35.663"/>
-</kw>
-<kw name="Close Browser" library="Browser">
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<msg timestamp="20221001 23:32:35.768" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20221001 23:32:35.663" endtime="20221001 23:32:35.769"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:35.098" endtime="20221001 23:32:35.769"/>
-</kw>
-<doc>Testes da pagina Dashboard</doc>
-<status status="PASS" starttime="20221001 23:32:19.007" endtime="20221001 23:32:35.769"/>
-</suite>
-<suite id="s1-s2" name="LoginDesafioTest" source="C:\RobotFramework\TradeStickerBrowser\Tests\LoginDesafioTest.robot">
-<test id="s1-s2-t1" name="Check invalid Login" line="16">
-<kw name="Start Session" library="BasePage" type="SETUP">
-<kw name="New Browser" library="Browser">
-<arg>headless=true</arg>
-<arg>browser=${BROWSER}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20221001 23:32:35.820" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\965eb5ee-58b8-4bcb-9ed0-9015919f6175"}</msg>
-<msg timestamp="20221001 23:32:36.615" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\965eb5ee-58b8-4bcb-9ed0-9015919f6175"}</msg>
-<status status="PASS" starttime="20221001 23:32:35.819" endtime="20221001 23:32:36.615"/>
-</kw>
-<kw name="New Context" library="Browser">
-<arg>viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20221001 23:32:36.616" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
-<msg timestamp="20221001 23:32:36.625" level="INFO">Successfully created context. </msg>
-<msg timestamp="20221001 23:32:36.625" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
-<status status="PASS" starttime="20221001 23:32:36.615" endtime="20221001 23:32:36.625"/>
-</kw>
-<kw name="Set Browser Timeout" library="Browser">
-<arg>${TIMEOUT}</arg>
-<tag>Config</tag>
-<tag>Setter</tag>
-<doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20221001 23:32:36.627" level="INFO">Set timeout to: 60000</msg>
-<status status="PASS" starttime="20221001 23:32:36.625" endtime="20221001 23:32:36.627"/>
-</kw>
-<kw name="New Page" library="Browser">
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<msg timestamp="20221001 23:32:37.416" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
-<status status="PASS" starttime="20221001 23:32:36.627" endtime="20221001 23:32:37.417"/>
-</kw>
-<kw name="Get Title" library="Browser">
-<arg>contains</arg>
-<arg>Trade Sticker</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20221001 23:32:37.417" endtime="20221001 23:32:37.460"/>
-</kw>
-<kw name="Check Login Page" library="LoginPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.541" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:37.541" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:37.461" endtime="20221001 23:32:37.541"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:37.461" endtime="20221001 23:32:37.541"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.590" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:37.590" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:37.543" endtime="20221001 23:32:37.590"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:37.541" endtime="20221001 23:32:37.591"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${passwordInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.633" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:37.633" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:37.591" endtime="20221001 23:32:37.633"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:37.591" endtime="20221001 23:32:37.634"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>${logoText}</arg>
-<arg>contains</arg>
-<arg>${slogan}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:37.634" endtime="20221001 23:32:37.655"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:37.460" endtime="20221001 23:32:37.655"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:35.818" endtime="20221001 23:32:37.655"/>
+<status status="PASS" starttime="20221001 23:56:21.978" endtime="20221001 23:56:30.436"/>
 </kw>
 <kw name="Login and check message" library="LoginPage">
 <arg>invalid@email.com</arg>
@@ -774,11 +133,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.707" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:37.707" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:37.657" endtime="20221001 23:32:37.707"/>
+<msg timestamp="20221001 23:56:30.479" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:30.479" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:30.438" endtime="20221001 23:56:30.479"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:37.657" endtime="20221001 23:32:37.707"/>
+<status status="PASS" starttime="20221001 23:56:30.437" endtime="20221001 23:56:30.479"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -791,11 +150,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.748" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:37.748" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:37.708" endtime="20221001 23:32:37.748"/>
+<msg timestamp="20221001 23:56:30.515" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:30.516" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:30.480" endtime="20221001 23:56:30.516"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:37.707" endtime="20221001 23:32:37.748"/>
+<status status="PASS" starttime="20221001 23:56:30.480" endtime="20221001 23:56:30.516"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -808,11 +167,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.820" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:37.820" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:37.749" endtime="20221001 23:32:37.820"/>
+<msg timestamp="20221001 23:56:30.554" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:30.554" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:30.516" endtime="20221001 23:56:30.554"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:37.748" endtime="20221001 23:32:37.820"/>
+<status status="PASS" starttime="20221001 23:56:30.516" endtime="20221001 23:56:30.554"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -822,9 +181,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:37.820" endtime="20221001 23:32:37.834"/>
+<status status="PASS" starttime="20221001 23:56:30.554" endtime="20221001 23:56:30.574"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:37.657" endtime="20221001 23:32:37.835"/>
+<status status="PASS" starttime="20221001 23:56:30.437" endtime="20221001 23:56:30.574"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${loginInput}</arg>
@@ -832,8 +191,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.835" level="INFO">Fills the text 'invalid@email.com' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:37.835" endtime="20221001 23:32:37.867"/>
+<msg timestamp="20221001 23:56:30.575" level="INFO">Fills the text 'invalid@email.com' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:30.575" endtime="20221001 23:56:30.611"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${passwordInput}</arg>
@@ -841,17 +200,17 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:37.867" level="INFO">Fills the text 'invalid' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:37.867" endtime="20221001 23:32:37.885"/>
+<msg timestamp="20221001 23:56:30.611" level="INFO">Fills the text 'invalid' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:30.611" endtime="20221001 23:56:30.629"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${loginButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:37.885" endtime="20221001 23:32:37.950"/>
+<status status="PASS" starttime="20221001 23:56:30.629" endtime="20221001 23:56:30.720"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:37.657" endtime="20221001 23:32:37.950"/>
+<status status="PASS" starttime="20221001 23:56:30.437" endtime="20221001 23:56:30.720"/>
 </kw>
 <kw name="Check Error alert" library="LoginPage">
 <arg>${message}</arg>
@@ -859,8 +218,8 @@
 <var>${locator}</var>
 <arg>${alert} &gt;&gt; text=${message}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20221001 23:32:37.951" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Credenciais inválidas</msg>
-<status status="PASS" starttime="20221001 23:32:37.950" endtime="20221001 23:32:37.951"/>
+<msg timestamp="20221001 23:56:30.721" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Credenciais inválidas</msg>
+<status status="PASS" starttime="20221001 23:56:30.721" endtime="20221001 23:56:30.721"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>${locator}</arg>
@@ -869,38 +228,38 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20221001 23:32:37.968" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Credenciais inválidas at state visible</msg>
-<status status="PASS" starttime="20221001 23:32:37.951" endtime="20221001 23:32:37.968"/>
+<msg timestamp="20221001 23:56:30.730" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Credenciais inválidas at state visible</msg>
+<status status="PASS" starttime="20221001 23:56:30.722" endtime="20221001 23:56:30.731"/>
 </kw>
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:38.238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:37.968" endtime="20221001 23:32:38.239"/>
+<msg timestamp="20221001 23:56:31.372" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:30.731" endtime="20221001 23:56:31.373"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:37.950" endtime="20221001 23:32:38.239"/>
+<status status="PASS" starttime="20221001 23:56:30.721" endtime="20221001 23:56:31.373"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:37.656" endtime="20221001 23:32:38.239"/>
+<status status="PASS" starttime="20221001 23:56:30.437" endtime="20221001 23:56:31.373"/>
 </kw>
 <kw name="Close Session" library="BasePage" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:38.494" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:38.240" endtime="20221001 23:32:38.494"/>
+<msg timestamp="20221001 23:56:31.955" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:31.375" endtime="20221001 23:56:31.955"/>
 </kw>
 <kw name="Close Browser" library="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<msg timestamp="20221001 23:32:42.530" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20221001 23:32:38.494" endtime="20221001 23:32:42.530"/>
+<msg timestamp="20221001 23:56:33.927" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20221001 23:56:31.956" endtime="20221001 23:56:33.928"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:38.239" endtime="20221001 23:32:42.530"/>
+<status status="PASS" starttime="20221001 23:56:31.374" endtime="20221001 23:56:33.928"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:35.815" endtime="20221001 23:32:42.531"/>
+<status status="PASS" starttime="20221001 23:56:21.975" endtime="20221001 23:56:33.929"/>
 </test>
-<test id="s1-s2-t2" name="Check Empty Login" line="17">
+<test id="s1-t2" name="Check Empty Login" line="18">
 <kw name="Start Session" library="BasePage" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>headless=true</arg>
@@ -908,35 +267,35 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20221001 23:32:42.538" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\e509266a-82fc-48bf-9e0e-de92d45327e8"}</msg>
-<msg timestamp="20221001 23:32:43.514" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\e509266a-82fc-48bf-9e0e-de92d45327e8"}</msg>
-<status status="PASS" starttime="20221001 23:32:42.537" endtime="20221001 23:32:43.515"/>
+<msg timestamp="20221001 23:56:33.937" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\ecceba7a-e890-44ea-8297-c9143d8b52e0"}</msg>
+<msg timestamp="20221001 23:56:34.968" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\ecceba7a-e890-44ea-8297-c9143d8b52e0"}</msg>
+<status status="PASS" starttime="20221001 23:56:33.936" endtime="20221001 23:56:34.969"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20221001 23:32:43.516" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
-<msg timestamp="20221001 23:32:43.522" level="INFO">Successfully created context. </msg>
-<msg timestamp="20221001 23:32:43.522" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
-<status status="PASS" starttime="20221001 23:32:43.515" endtime="20221001 23:32:43.522"/>
+<msg timestamp="20221001 23:56:34.970" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221001 23:56:35.009" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221001 23:56:35.009" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<status status="PASS" starttime="20221001 23:56:34.969" endtime="20221001 23:56:35.009"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${TIMEOUT}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20221001 23:32:43.527" level="INFO">Set timeout to: 60000</msg>
-<status status="PASS" starttime="20221001 23:32:43.523" endtime="20221001 23:32:43.527"/>
+<msg timestamp="20221001 23:56:35.013" level="INFO">Set timeout to: 60000</msg>
+<status status="PASS" starttime="20221001 23:56:35.009" endtime="20221001 23:56:35.013"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20221001 23:32:44.321" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
-<status status="PASS" starttime="20221001 23:32:43.527" endtime="20221001 23:32:44.321"/>
+<msg timestamp="20221001 23:56:41.027" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
+<status status="PASS" starttime="20221001 23:56:35.013" endtime="20221001 23:56:41.028"/>
 </kw>
 <kw name="Get Title" library="Browser">
 <arg>contains</arg>
@@ -945,7 +304,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20221001 23:32:44.321" endtime="20221001 23:32:44.374"/>
+<status status="PASS" starttime="20221001 23:56:41.028" endtime="20221001 23:56:41.034"/>
 </kw>
 <kw name="Check Login Page" library="LoginPage">
 <kw name="Is Element Visible" library="ActionsPage">
@@ -959,11 +318,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.438" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:44.438" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:44.375" endtime="20221001 23:32:44.438"/>
+<msg timestamp="20221001 23:56:41.100" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:41.100" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:41.034" endtime="20221001 23:56:41.100"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.374" endtime="20221001 23:32:44.438"/>
+<status status="PASS" starttime="20221001 23:56:41.034" endtime="20221001 23:56:41.100"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -976,11 +335,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.473" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:44.474" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:44.438" endtime="20221001 23:32:44.474"/>
+<msg timestamp="20221001 23:56:41.145" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:41.145" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:41.101" endtime="20221001 23:56:41.145"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.438" endtime="20221001 23:32:44.474"/>
+<status status="PASS" starttime="20221001 23:56:41.100" endtime="20221001 23:56:41.145"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -993,11 +352,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.508" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:44.508" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:44.475" endtime="20221001 23:32:44.508"/>
+<msg timestamp="20221001 23:56:41.180" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:41.180" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:41.145" endtime="20221001 23:56:41.180"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.474" endtime="20221001 23:32:44.508"/>
+<status status="PASS" starttime="20221001 23:56:41.145" endtime="20221001 23:56:41.180"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -1007,11 +366,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:44.508" endtime="20221001 23:32:44.524"/>
+<status status="PASS" starttime="20221001 23:56:41.180" endtime="20221001 23:56:41.196"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.374" endtime="20221001 23:32:44.524"/>
+<status status="PASS" starttime="20221001 23:56:41.034" endtime="20221001 23:56:41.196"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:42.537" endtime="20221001 23:32:44.524"/>
+<status status="PASS" starttime="20221001 23:56:33.935" endtime="20221001 23:56:41.196"/>
 </kw>
 <kw name="Login and check message" library="LoginPage">
 <arg>${EMPTY}</arg>
@@ -1032,11 +391,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.571" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:44.571" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:44.531" endtime="20221001 23:32:44.571"/>
+<msg timestamp="20221001 23:56:41.239" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:41.239" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:41.199" endtime="20221001 23:56:41.239"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.530" endtime="20221001 23:32:44.571"/>
+<status status="PASS" starttime="20221001 23:56:41.199" endtime="20221001 23:56:41.239"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -1049,11 +408,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.604" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:44.604" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:44.571" endtime="20221001 23:32:44.604"/>
+<msg timestamp="20221001 23:56:41.282" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:41.282" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:41.239" endtime="20221001 23:56:41.282"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.571" endtime="20221001 23:32:44.604"/>
+<status status="PASS" starttime="20221001 23:56:41.239" endtime="20221001 23:56:41.282"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -1066,11 +425,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.644" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:44.644" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:44.604" endtime="20221001 23:32:44.644"/>
+<msg timestamp="20221001 23:56:41.312" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:41.313" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:41.282" endtime="20221001 23:56:41.313"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.604" endtime="20221001 23:32:44.644"/>
+<status status="PASS" starttime="20221001 23:56:41.282" endtime="20221001 23:56:41.313"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -1080,9 +439,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:44.644" endtime="20221001 23:32:44.657"/>
+<status status="PASS" starttime="20221001 23:56:41.313" endtime="20221001 23:56:41.326"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.530" endtime="20221001 23:32:44.657"/>
+<status status="PASS" starttime="20221001 23:56:41.198" endtime="20221001 23:56:41.326"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${loginInput}</arg>
@@ -1090,8 +449,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.658" level="INFO">Fills the text '' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:44.657" endtime="20221001 23:32:44.673"/>
+<msg timestamp="20221001 23:56:41.326" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:41.326" endtime="20221001 23:56:41.342"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${passwordInput}</arg>
@@ -1099,17 +458,17 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:44.673" level="INFO">Fills the text 'invalid' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:44.673" endtime="20221001 23:32:44.692"/>
+<msg timestamp="20221001 23:56:41.342" level="INFO">Fills the text 'invalid' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:41.342" endtime="20221001 23:56:41.360"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${loginButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:44.692" endtime="20221001 23:32:44.765"/>
+<status status="PASS" starttime="20221001 23:56:41.360" endtime="20221001 23:56:41.425"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.529" endtime="20221001 23:32:44.765"/>
+<status status="PASS" starttime="20221001 23:56:41.198" endtime="20221001 23:56:41.425"/>
 </kw>
 <kw name="Check Error alert" library="LoginPage">
 <arg>${message}</arg>
@@ -1117,8 +476,8 @@
 <var>${locator}</var>
 <arg>${alert} &gt;&gt; text=${message}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20221001 23:32:44.766" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Por favor, informe o seu email!</msg>
-<status status="PASS" starttime="20221001 23:32:44.766" endtime="20221001 23:32:44.766"/>
+<msg timestamp="20221001 23:56:41.425" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Por favor, informe o seu email!</msg>
+<status status="PASS" starttime="20221001 23:56:41.425" endtime="20221001 23:56:41.425"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>${locator}</arg>
@@ -1127,38 +486,38 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20221001 23:32:44.775" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Por favor, informe o seu email! at state visible</msg>
-<status status="PASS" starttime="20221001 23:32:44.766" endtime="20221001 23:32:44.776"/>
+<msg timestamp="20221001 23:56:41.435" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Por favor, informe o seu email! at state visible</msg>
+<status status="PASS" starttime="20221001 23:56:41.425" endtime="20221001 23:56:41.435"/>
 </kw>
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:45.027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:44.776" endtime="20221001 23:32:45.027"/>
+<msg timestamp="20221001 23:56:42.008" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:41.435" endtime="20221001 23:56:42.008"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.765" endtime="20221001 23:32:45.027"/>
+<status status="PASS" starttime="20221001 23:56:41.425" endtime="20221001 23:56:42.008"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:44.525" endtime="20221001 23:32:45.028"/>
+<status status="PASS" starttime="20221001 23:56:41.196" endtime="20221001 23:56:42.008"/>
 </kw>
 <kw name="Close Session" library="BasePage" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:45.274" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:45.029" endtime="20221001 23:32:45.274"/>
+<msg timestamp="20221001 23:56:42.571" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:42.010" endtime="20221001 23:56:42.572"/>
 </kw>
 <kw name="Close Browser" library="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<msg timestamp="20221001 23:32:47.332" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20221001 23:32:45.274" endtime="20221001 23:32:47.332"/>
+<msg timestamp="20221001 23:56:42.641" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20221001 23:56:42.572" endtime="20221001 23:56:42.641"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:45.028" endtime="20221001 23:32:47.332"/>
+<status status="PASS" starttime="20221001 23:56:42.009" endtime="20221001 23:56:42.641"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:42.534" endtime="20221001 23:32:47.332"/>
+<status status="PASS" starttime="20221001 23:56:33.932" endtime="20221001 23:56:42.641"/>
 </test>
-<test id="s1-s2-t3" name="Check Empty Password" line="18">
+<test id="s1-t3" name="Check Empty Password" line="19">
 <kw name="Start Session" library="BasePage" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>headless=true</arg>
@@ -1166,35 +525,35 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20221001 23:32:47.340" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\0be445c9-758a-4222-9152-478949d7f643"}</msg>
-<msg timestamp="20221001 23:32:48.558" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\0be445c9-758a-4222-9152-478949d7f643"}</msg>
-<status status="PASS" starttime="20221001 23:32:47.340" endtime="20221001 23:32:48.558"/>
+<msg timestamp="20221001 23:56:42.650" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\3d16e1c7-5d82-46dc-98a0-fd87bf43465e"}</msg>
+<msg timestamp="20221001 23:56:43.586" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\3d16e1c7-5d82-46dc-98a0-fd87bf43465e"}</msg>
+<status status="PASS" starttime="20221001 23:56:42.649" endtime="20221001 23:56:43.586"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20221001 23:32:48.562" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
-<msg timestamp="20221001 23:32:48.571" level="INFO">Successfully created context. </msg>
-<msg timestamp="20221001 23:32:48.571" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
-<status status="PASS" starttime="20221001 23:32:48.560" endtime="20221001 23:32:48.571"/>
+<msg timestamp="20221001 23:56:43.588" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221001 23:56:43.595" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221001 23:56:43.595" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<status status="PASS" starttime="20221001 23:56:43.587" endtime="20221001 23:56:43.595"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${TIMEOUT}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20221001 23:32:48.574" level="INFO">Set timeout to: 60000</msg>
-<status status="PASS" starttime="20221001 23:32:48.571" endtime="20221001 23:32:48.574"/>
+<msg timestamp="20221001 23:56:43.598" level="INFO">Set timeout to: 60000</msg>
+<status status="PASS" starttime="20221001 23:56:43.596" endtime="20221001 23:56:43.598"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20221001 23:32:50.289" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
-<status status="PASS" starttime="20221001 23:32:48.574" endtime="20221001 23:32:50.289"/>
+<msg timestamp="20221001 23:56:48.318" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
+<status status="PASS" starttime="20221001 23:56:43.598" endtime="20221001 23:56:48.318"/>
 </kw>
 <kw name="Get Title" library="Browser">
 <arg>contains</arg>
@@ -1203,7 +562,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20221001 23:32:50.289" endtime="20221001 23:32:50.298"/>
+<status status="PASS" starttime="20221001 23:56:48.319" endtime="20221001 23:56:48.324"/>
 </kw>
 <kw name="Check Login Page" library="LoginPage">
 <kw name="Is Element Visible" library="ActionsPage">
@@ -1217,11 +576,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.396" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:50.396" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:50.299" endtime="20221001 23:32:50.396"/>
+<msg timestamp="20221001 23:56:48.386" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:48.386" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:48.324" endtime="20221001 23:56:48.386"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.299" endtime="20221001 23:32:50.396"/>
+<status status="PASS" starttime="20221001 23:56:48.324" endtime="20221001 23:56:48.387"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -1234,11 +593,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.446" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:50.446" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:50.397" endtime="20221001 23:32:50.446"/>
+<msg timestamp="20221001 23:56:48.422" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:48.423" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:48.387" endtime="20221001 23:56:48.423"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.396" endtime="20221001 23:32:50.446"/>
+<status status="PASS" starttime="20221001 23:56:48.387" endtime="20221001 23:56:48.423"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -1251,11 +610,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.485" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:50.486" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:50.446" endtime="20221001 23:32:50.486"/>
+<msg timestamp="20221001 23:56:48.457" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:48.457" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:48.424" endtime="20221001 23:56:48.457"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.446" endtime="20221001 23:32:50.486"/>
+<status status="PASS" starttime="20221001 23:56:48.423" endtime="20221001 23:56:48.457"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -1265,11 +624,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:50.486" endtime="20221001 23:32:50.504"/>
+<status status="PASS" starttime="20221001 23:56:48.457" endtime="20221001 23:56:48.471"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.298" endtime="20221001 23:32:50.504"/>
+<status status="PASS" starttime="20221001 23:56:48.324" endtime="20221001 23:56:48.472"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:47.340" endtime="20221001 23:32:50.505"/>
+<status status="PASS" starttime="20221001 23:56:42.648" endtime="20221001 23:56:48.472"/>
 </kw>
 <kw name="Login and check message" library="LoginPage">
 <arg>invalid@email.com</arg>
@@ -1290,11 +649,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.551" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:50.551" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:50.510" endtime="20221001 23:32:50.551"/>
+<msg timestamp="20221001 23:56:48.520" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:48.520" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:48.475" endtime="20221001 23:56:48.520"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.509" endtime="20221001 23:32:50.551"/>
+<status status="PASS" starttime="20221001 23:56:48.474" endtime="20221001 23:56:48.520"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -1307,11 +666,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.595" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:50.595" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:50.553" endtime="20221001 23:32:50.595"/>
+<msg timestamp="20221001 23:56:48.559" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:48.559" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:48.521" endtime="20221001 23:56:48.559"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.552" endtime="20221001 23:32:50.595"/>
+<status status="PASS" starttime="20221001 23:56:48.520" endtime="20221001 23:56:48.559"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -1324,11 +683,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.646" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:50.647" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:50.596" endtime="20221001 23:32:50.647"/>
+<msg timestamp="20221001 23:56:48.591" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:48.591" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:48.559" endtime="20221001 23:56:48.591"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.595" endtime="20221001 23:32:50.647"/>
+<status status="PASS" starttime="20221001 23:56:48.559" endtime="20221001 23:56:48.591"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -1338,9 +697,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:50.647" endtime="20221001 23:32:50.660"/>
+<status status="PASS" starttime="20221001 23:56:48.592" endtime="20221001 23:56:48.606"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.508" endtime="20221001 23:32:50.660"/>
+<status status="PASS" starttime="20221001 23:56:48.474" endtime="20221001 23:56:48.606"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${loginInput}</arg>
@@ -1348,8 +707,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.661" level="INFO">Fills the text 'invalid@email.com' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:50.660" endtime="20221001 23:32:50.695"/>
+<msg timestamp="20221001 23:56:48.607" level="INFO">Fills the text 'invalid@email.com' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:48.606" endtime="20221001 23:56:48.625"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${passwordInput}</arg>
@@ -1357,17 +716,17 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:50.696" level="INFO">Fills the text '' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:50.695" endtime="20221001 23:32:50.715"/>
+<msg timestamp="20221001 23:56:48.625" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:48.625" endtime="20221001 23:56:48.640"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${loginButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:50.715" endtime="20221001 23:32:50.911"/>
+<status status="PASS" starttime="20221001 23:56:48.640" endtime="20221001 23:56:48.685"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.508" endtime="20221001 23:32:50.911"/>
+<status status="PASS" starttime="20221001 23:56:48.474" endtime="20221001 23:56:48.685"/>
 </kw>
 <kw name="Check Error alert" library="LoginPage">
 <arg>${message}</arg>
@@ -1375,8 +734,8 @@
 <var>${locator}</var>
 <arg>${alert} &gt;&gt; text=${message}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20221001 23:32:50.912" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Por favor, informe a sua senha secreta!</msg>
-<status status="PASS" starttime="20221001 23:32:50.911" endtime="20221001 23:32:50.912"/>
+<msg timestamp="20221001 23:56:48.687" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Por favor, informe a sua senha secreta!</msg>
+<status status="PASS" starttime="20221001 23:56:48.686" endtime="20221001 23:56:48.687"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>${locator}</arg>
@@ -1385,42 +744,38 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20221001 23:32:50.930" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Por favor, informe a sua senha secreta! at state visible</msg>
-<status status="PASS" starttime="20221001 23:32:50.912" endtime="20221001 23:32:50.931"/>
+<msg timestamp="20221001 23:56:48.696" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Por favor, informe a sua senha secreta! at state visible</msg>
+<status status="PASS" starttime="20221001 23:56:48.687" endtime="20221001 23:56:48.696"/>
 </kw>
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:51.588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:50.931" endtime="20221001 23:32:51.588"/>
+<msg timestamp="20221001 23:56:49.262" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:48.696" endtime="20221001 23:56:49.262"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.911" endtime="20221001 23:32:51.589"/>
+<status status="PASS" starttime="20221001 23:56:48.685" endtime="20221001 23:56:49.262"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:50.505" endtime="20221001 23:32:51.589"/>
+<status status="PASS" starttime="20221001 23:56:48.472" endtime="20221001 23:56:49.262"/>
 </kw>
 <kw name="Close Session" library="BasePage" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:52.172" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:51.590" endtime="20221001 23:32:52.172"/>
+<msg timestamp="20221001 23:56:49.836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:49.263" endtime="20221001 23:56:49.837"/>
 </kw>
 <kw name="Close Browser" library="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<msg timestamp="20221001 23:32:54.240" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20221001 23:32:52.172" endtime="20221001 23:32:54.241"/>
+<msg timestamp="20221001 23:56:49.904" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20221001 23:56:49.837" endtime="20221001 23:56:49.904"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:51.589" endtime="20221001 23:32:54.241"/>
+<status status="PASS" starttime="20221001 23:56:49.263" endtime="20221001 23:56:49.904"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:47.336" endtime="20221001 23:32:54.241"/>
+<status status="PASS" starttime="20221001 23:56:42.645" endtime="20221001 23:56:49.905"/>
 </test>
-<doc>Teste de login</doc>
-<status status="PASS" starttime="20221001 23:32:35.773" endtime="20221001 23:32:54.245"/>
-</suite>
-<suite id="s1-s3" name="LoginTest" source="C:\RobotFramework\TradeStickerBrowser\Tests\LoginTest.robot">
-<test id="s1-s3-t1" name="Scenario1: Check Login Page" line="13">
+<test id="s1-t4" name="Check Empty Login and Password" line="20">
 <kw name="Start Session" library="BasePage" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>headless=true</arg>
@@ -1428,35 +783,35 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20221001 23:32:54.277" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\1cb7db8f-cc35-4ebd-9b00-efac074a1264"}</msg>
-<msg timestamp="20221001 23:32:55.257" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\1cb7db8f-cc35-4ebd-9b00-efac074a1264"}</msg>
-<status status="PASS" starttime="20221001 23:32:54.275" endtime="20221001 23:32:55.258"/>
+<msg timestamp="20221001 23:56:49.913" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\0df1c9aa-a605-41f7-be48-5a2954a72fee"}</msg>
+<msg timestamp="20221001 23:56:50.747" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\0df1c9aa-a605-41f7-be48-5a2954a72fee"}</msg>
+<status status="PASS" starttime="20221001 23:56:49.912" endtime="20221001 23:56:50.747"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20221001 23:32:55.260" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
-<msg timestamp="20221001 23:32:55.268" level="INFO">Successfully created context. </msg>
-<msg timestamp="20221001 23:32:55.268" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
-<status status="PASS" starttime="20221001 23:32:55.258" endtime="20221001 23:32:55.268"/>
+<msg timestamp="20221001 23:56:50.749" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221001 23:56:50.756" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221001 23:56:50.756" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<status status="PASS" starttime="20221001 23:56:50.748" endtime="20221001 23:56:50.756"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${TIMEOUT}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20221001 23:32:55.271" level="INFO">Set timeout to: 60000</msg>
-<status status="PASS" starttime="20221001 23:32:55.269" endtime="20221001 23:32:55.271"/>
+<msg timestamp="20221001 23:56:50.759" level="INFO">Set timeout to: 60000</msg>
+<status status="PASS" starttime="20221001 23:56:50.756" endtime="20221001 23:56:50.759"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20221001 23:32:56.043" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
-<status status="PASS" starttime="20221001 23:32:55.271" endtime="20221001 23:32:56.043"/>
+<msg timestamp="20221001 23:56:53.658" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
+<status status="PASS" starttime="20221001 23:56:50.759" endtime="20221001 23:56:53.658"/>
 </kw>
 <kw name="Get Title" library="Browser">
 <arg>contains</arg>
@@ -1465,7 +820,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20221001 23:32:56.043" endtime="20221001 23:32:56.129"/>
+<status status="PASS" starttime="20221001 23:56:53.658" endtime="20221001 23:56:53.665"/>
 </kw>
 <kw name="Check Login Page" library="LoginPage">
 <kw name="Is Element Visible" library="ActionsPage">
@@ -1479,11 +834,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.197" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.198" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.130" endtime="20221001 23:32:56.198"/>
+<msg timestamp="20221001 23:56:53.740" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:53.740" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:53.666" endtime="20221001 23:56:53.740"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.129" endtime="20221001 23:32:56.198"/>
+<status status="PASS" starttime="20221001 23:56:53.665" endtime="20221001 23:56:53.740"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -1496,11 +851,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.234" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.235" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.198" endtime="20221001 23:32:56.235"/>
+<msg timestamp="20221001 23:56:53.784" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:53.784" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:53.740" endtime="20221001 23:56:53.784"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.198" endtime="20221001 23:32:56.235"/>
+<status status="PASS" starttime="20221001 23:56:53.740" endtime="20221001 23:56:53.785"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -1513,11 +868,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.272" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.272" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.235" endtime="20221001 23:32:56.272"/>
+<msg timestamp="20221001 23:56:53.835" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:53.835" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:53.785" endtime="20221001 23:56:53.835"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.235" endtime="20221001 23:32:56.272"/>
+<status status="PASS" starttime="20221001 23:56:53.785" endtime="20221001 23:56:53.835"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -1527,12 +882,16 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:56.272" endtime="20221001 23:32:56.288"/>
+<status status="PASS" starttime="20221001 23:56:53.835" endtime="20221001 23:56:53.855"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.129" endtime="20221001 23:32:56.288"/>
+<status status="PASS" starttime="20221001 23:56:53.665" endtime="20221001 23:56:53.855"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:54.275" endtime="20221001 23:32:56.288"/>
+<status status="PASS" starttime="20221001 23:56:49.911" endtime="20221001 23:56:53.855"/>
 </kw>
+<kw name="Login and check message" library="LoginPage">
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>${messageErrorCredentials}</arg>
 <kw name="Login With" library="LoginPage">
 <arg>${login}</arg>
 <arg>${password}</arg>
@@ -1548,11 +907,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.332" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.332" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.290" endtime="20221001 23:32:56.332"/>
+<msg timestamp="20221001 23:56:53.905" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:53.905" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:53.858" endtime="20221001 23:56:53.905"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.289" endtime="20221001 23:32:56.332"/>
+<status status="PASS" starttime="20221001 23:56:53.858" endtime="20221001 23:56:53.905"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${loginButton}</arg>
@@ -1565,11 +924,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.371" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.371" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.333" endtime="20221001 23:32:56.371"/>
+<msg timestamp="20221001 23:56:53.947" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:53.947" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:53.906" endtime="20221001 23:56:53.947"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.332" endtime="20221001 23:32:56.371"/>
+<status status="PASS" starttime="20221001 23:56:53.906" endtime="20221001 23:56:53.947"/>
 </kw>
 <kw name="Is Element Visible" library="ActionsPage">
 <arg>${passwordInput}</arg>
@@ -1582,11 +941,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.406" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.406" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.371" endtime="20221001 23:32:56.406"/>
+<msg timestamp="20221001 23:56:53.990" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg timestamp="20221001 23:56:53.990" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20221001 23:56:53.947" endtime="20221001 23:56:53.990"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.371" endtime="20221001 23:32:56.406"/>
+<status status="PASS" starttime="20221001 23:56:53.947" endtime="20221001 23:56:53.991"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${logoText}</arg>
@@ -1596,9 +955,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:56.406" endtime="20221001 23:32:56.420"/>
+<status status="PASS" starttime="20221001 23:56:53.991" endtime="20221001 23:56:54.005"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.289" endtime="20221001 23:32:56.420"/>
+<status status="PASS" starttime="20221001 23:56:53.858" endtime="20221001 23:56:54.005"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${loginInput}</arg>
@@ -1606,8 +965,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.421" level="INFO">Fills the text 'papito@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:56.420" endtime="20221001 23:32:56.438"/>
+<msg timestamp="20221001 23:56:54.006" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:54.005" endtime="20221001 23:56:54.027"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${passwordInput}</arg>
@@ -1615,374 +974,17 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.439" level="INFO">Fills the text 'vaibrasil' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:32:56.439" endtime="20221001 23:32:56.455"/>
+<msg timestamp="20221001 23:56:54.027" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20221001 23:56:54.027" endtime="20221001 23:56:54.043"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${loginButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:56.455" endtime="20221001 23:32:56.525"/>
+<status status="PASS" starttime="20221001 23:56:54.043" endtime="20221001 23:56:54.129"/>
 </kw>
-<status status="PASS" starttime="20221001 23:32:56.289" endtime="20221001 23:32:56.525"/>
-</kw>
-<kw name="Check DashBoardPage Page" library="DashboardPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${backButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.566" level="INFO">States are: ['attached', 'hidden', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.566" level="INFO">${visibility} = ['attached', 'hidden', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.527" endtime="20221001 23:32:56.566"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:56.527" endtime="20221001 23:32:56.566"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${searchBarInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.605" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.605" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.566" endtime="20221001 23:32:56.605"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:56.566" endtime="20221001 23:32:56.605"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${searchButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:56.644" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:56.644" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:56.606" endtime="20221001 23:32:56.645"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:56.605" endtime="20221001 23:32:56.645"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:56.526" endtime="20221001 23:32:56.645"/>
-</kw>
-<kw name="Click Back Button" library="DashboardPage">
-<kw name="Click" library="Browser">
-<arg>${backButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:56.645" endtime="20221001 23:32:57.042"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:56.645" endtime="20221001 23:32:57.042"/>
-</kw>
-<kw name="Check Login Page" library="LoginPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:57.082" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:57.082" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:57.044" endtime="20221001 23:32:57.082"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:57.043" endtime="20221001 23:32:57.082"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:57.119" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:57.119" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:57.083" endtime="20221001 23:32:57.119"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:57.082" endtime="20221001 23:32:57.119"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${passwordInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:32:57.159" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:32:57.159" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:32:57.120" endtime="20221001 23:32:57.159"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:57.119" endtime="20221001 23:32:57.159"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>${logoText}</arg>
-<arg>contains</arg>
-<arg>${slogan}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:32:57.159" endtime="20221001 23:32:57.174"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:57.043" endtime="20221001 23:32:57.174"/>
-</kw>
-<kw name="Close Session" library="BasePage" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:32:57.748" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-9.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:32:57.175" endtime="20221001 23:32:57.748"/>
-</kw>
-<kw name="Close Browser" library="Browser">
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<msg timestamp="20221001 23:32:58.532" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20221001 23:32:57.748" endtime="20221001 23:32:58.532"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:57.175" endtime="20221001 23:32:58.532"/>
-</kw>
-<doc>Test for Login Page</doc>
-<tag>full</tag>
-<tag>login</tag>
-<tag>smoke</tag>
-<status status="PASS" starttime="20221001 23:32:54.272" endtime="20221001 23:32:58.532"/>
-</test>
-<test id="s1-s3-t2" name="Scenario1: Check invalid Login" line="21">
-<kw name="Start Session" library="BasePage" type="SETUP">
-<kw name="New Browser" library="Browser">
-<arg>headless=true</arg>
-<arg>browser=${BROWSER}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20221001 23:32:58.560" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\acd9027d-157b-43d0-b966-d84ffff3d0ee"}</msg>
-<msg timestamp="20221001 23:32:59.882" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotFramework\\TradeStickerBrowser\\Results\\browser\\traces\\acd9027d-157b-43d0-b966-d84ffff3d0ee"}</msg>
-<status status="PASS" starttime="20221001 23:32:58.560" endtime="20221001 23:32:59.882"/>
-</kw>
-<kw name="New Context" library="Browser">
-<arg>viewport={'width': ${BROWSER_WIDTH}, 'height': ${BROWSER_HEIGHT}}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20221001 23:32:59.883" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1440, "height": 900}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
-<msg timestamp="20221001 23:32:59.906" level="INFO">Successfully created context. </msg>
-<msg timestamp="20221001 23:32:59.906" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1440, 'height': 900}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
-<status status="PASS" starttime="20221001 23:32:59.882" endtime="20221001 23:32:59.906"/>
-</kw>
-<kw name="Set Browser Timeout" library="Browser">
-<arg>${TIMEOUT}</arg>
-<tag>Config</tag>
-<tag>Setter</tag>
-<doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20221001 23:32:59.909" level="INFO">Set timeout to: 60000</msg>
-<status status="PASS" starttime="20221001 23:32:59.906" endtime="20221001 23:32:59.909"/>
-</kw>
-<kw name="New Page" library="Browser">
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<msg timestamp="20221001 23:33:01.559" level="INFO">Successfully initialized new page object and opened url: https://trade-sticker-dev.vercel.app/</msg>
-<status status="PASS" starttime="20221001 23:32:59.909" endtime="20221001 23:33:01.559"/>
-</kw>
-<kw name="Get Title" library="Browser">
-<arg>contains</arg>
-<arg>Trade Sticker</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20221001 23:33:01.559" endtime="20221001 23:33:01.566"/>
-</kw>
-<kw name="Check Login Page" library="LoginPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.660" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:33:01.660" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:33:01.567" endtime="20221001 23:33:01.660"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.567" endtime="20221001 23:33:01.660"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.702" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:33:01.702" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:33:01.661" endtime="20221001 23:33:01.703"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.661" endtime="20221001 23:33:01.703"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${passwordInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.741" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:33:01.741" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:33:01.704" endtime="20221001 23:33:01.741"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.703" endtime="20221001 23:33:01.741"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>${logoText}</arg>
-<arg>contains</arg>
-<arg>${slogan}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:33:01.741" endtime="20221001 23:33:01.758"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.566" endtime="20221001 23:33:01.758"/>
-</kw>
-<status status="PASS" starttime="20221001 23:32:58.559" endtime="20221001 23:33:01.758"/>
-</kw>
-<kw name="Login With" library="LoginPage">
-<arg>invalid@email.com</arg>
-<arg>invalid</arg>
-<kw name="Check Login Page" library="LoginPage">
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.799" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:33:01.799" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:33:01.760" endtime="20221001 23:33:01.799"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.759" endtime="20221001 23:33:01.799"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${loginButton}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.835" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:33:01.836" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:33:01.800" endtime="20221001 23:33:01.836"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.799" endtime="20221001 23:33:01.836"/>
-</kw>
-<kw name="Is Element Visible" library="ActionsPage">
-<arg>${passwordInput}</arg>
-<kw name="Get Element States" library="Browser">
-<var>${visibility}</var>
-<arg>${webElement}</arg>
-<arg>validate</arg>
-<arg>enabled | visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.877" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<msg timestamp="20221001 23:33:01.877" level="INFO">${visibility} = ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20221001 23:33:01.836" endtime="20221001 23:33:01.877"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.836" endtime="20221001 23:33:01.877"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>${logoText}</arg>
-<arg>contains</arg>
-<arg>${slogan}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:33:01.877" endtime="20221001 23:33:01.891"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.759" endtime="20221001 23:33:01.891"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>${loginInput}</arg>
-<arg>${login}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.892" level="INFO">Fills the text 'invalid@email.com' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:33:01.891" endtime="20221001 23:33:01.921"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>${passwordInput}</arg>
-<arg>${password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221001 23:33:01.922" level="INFO">Fills the text 'invalid' in the given field.</msg>
-<status status="PASS" starttime="20221001 23:33:01.922" endtime="20221001 23:33:01.938"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>${loginButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221001 23:33:01.939" endtime="20221001 23:33:02.007"/>
-</kw>
-<status status="PASS" starttime="20221001 23:33:01.759" endtime="20221001 23:33:02.007"/>
+<status status="PASS" starttime="20221001 23:56:53.857" endtime="20221001 23:56:54.129"/>
 </kw>
 <kw name="Check Error alert" library="LoginPage">
 <arg>${message}</arg>
@@ -1990,8 +992,8 @@
 <var>${locator}</var>
 <arg>${alert} &gt;&gt; text=${message}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20221001 23:33:02.008" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Credenciais inválidas</msg>
-<status status="PASS" starttime="20221001 23:33:02.008" endtime="20221001 23:33:02.008"/>
+<msg timestamp="20221001 23:56:54.130" level="INFO">${locator} = .Toastify__toast-body div &gt;&gt; text=Por favor, informe suas credenciais!</msg>
+<status status="PASS" starttime="20221001 23:56:54.129" endtime="20221001 23:56:54.131"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>${locator}</arg>
@@ -2000,68 +1002,53 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20221001 23:33:02.026" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Credenciais inválidas at state visible</msg>
-<status status="PASS" starttime="20221001 23:33:02.009" endtime="20221001 23:33:02.026"/>
+<msg timestamp="20221001 23:56:54.172" level="INFO">Waited for Element with selector .Toastify__toast-body div &gt;&gt; text=Por favor, informe suas credenciais! at state visible</msg>
+<status status="PASS" starttime="20221001 23:56:54.131" endtime="20221001 23:56:54.172"/>
 </kw>
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:33:02.617" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-10.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:33:02.026" endtime="20221001 23:33:02.617"/>
+<msg timestamp="20221001 23:56:54.811" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:54.173" endtime="20221001 23:56:54.811"/>
 </kw>
-<status status="PASS" starttime="20221001 23:33:02.007" endtime="20221001 23:33:02.617"/>
+<status status="PASS" starttime="20221001 23:56:54.129" endtime="20221001 23:56:54.811"/>
+</kw>
+<status status="PASS" starttime="20221001 23:56:53.856" endtime="20221001 23:56:54.811"/>
 </kw>
 <kw name="Close Session" library="BasePage" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20221001 23:33:03.213" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-11.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221001 23:33:02.618" endtime="20221001 23:33:03.214"/>
+<msg timestamp="20221001 23:56:55.411" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 23:56:54.812" endtime="20221001 23:56:55.411"/>
 </kw>
 <kw name="Close Browser" library="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<msg timestamp="20221001 23:33:05.688" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20221001 23:33:03.214" endtime="20221001 23:33:05.688"/>
+<msg timestamp="20221001 23:56:57.458" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20221001 23:56:55.411" endtime="20221001 23:56:57.459"/>
 </kw>
-<status status="PASS" starttime="20221001 23:33:02.618" endtime="20221001 23:33:05.688"/>
+<status status="PASS" starttime="20221001 23:56:54.812" endtime="20221001 23:56:57.459"/>
 </kw>
-<tag>full</tag>
-<tag>invalid</tag>
-<tag>smoke</tag>
-<status status="PASS" starttime="20221001 23:32:58.535" endtime="20221001 23:33:05.689"/>
+<status status="PASS" starttime="20221001 23:56:49.908" endtime="20221001 23:56:57.460"/>
 </test>
 <doc>Teste de login</doc>
-<status status="PASS" starttime="20221001 23:32:54.249" endtime="20221001 23:33:05.694"/>
-</suite>
-<status status="PASS" starttime="20221001 23:32:18.988" endtime="20221001 23:33:05.698"/>
+<status status="PASS" starttime="20221001 23:56:16.865" endtime="20221001 23:56:57.479"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">Dashboard</stat>
-<stat pass="1" fail="0" skip="0">doing</stat>
-<stat pass="4" fail="0" skip="0">full</stat>
-<stat pass="1" fail="0" skip="0">invalid</stat>
-<stat pass="1" fail="0" skip="0">login</stat>
-<stat pass="4" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="7" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="DashboardTest">Tests.DashboardTest</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s2" name="LoginDesafioTest">Tests.LoginDesafioTest</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s3" name="LoginTest">Tests.LoginTest</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="LoginDesafioTest">LoginDesafioTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221001 23:32:19.826" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\LoginPage.resource' on line 4: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
-<msg timestamp="20221001 23:32:19.868" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\DashboardPage.resource' on line 5: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
-<msg timestamp="20221001 23:32:35.801" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\LoginPage.resource' on line 4: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
-<msg timestamp="20221001 23:32:35.805" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\DashboardPage.resource' on line 5: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
-<msg timestamp="20221001 23:32:54.261" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\LoginPage.resource' on line 4: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
-<msg timestamp="20221001 23:32:54.265" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\DashboardPage.resource' on line 5: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
+<msg timestamp="20221001 23:56:18.189" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\LoginPage.resource' on line 4: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
+<msg timestamp="20221001 23:56:18.192" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\LoginPage.resource' on line 5: Variable file 'properties.py' does not exist.</msg>
+<msg timestamp="20221001 23:56:18.204" level="ERROR">Error in file 'C:\RobotFramework\TradeStickerBrowser\Resources\Pages\DashboardPage.resource' on line 5: Resource file 'Pages\Common\ActionsPage.resource' does not exist.</msg>
 </errors>
 </robot>
