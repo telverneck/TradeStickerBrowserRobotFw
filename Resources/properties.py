@@ -1,4 +1,7 @@
-browserName =       "chrome"
+browserName =       "chromium" #chromium    firefox    webkit
 loginEmailAccess = "papito@gmail.com"
 passwordAccess = "vaibrasil"
-
+errorLoginMessage = "Credenciais inválidas"
+errorEmailMessage = "Por favor, informe o seu email!"
+errorPasswordMessage = "Por favor, informe a sua senha secreta!"
+sloganText  = "Conectando colecionadores de figurinhas da copa."
